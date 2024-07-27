@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--
+This is a simple Html page
+    Copyright (C) 2024 Edward Han
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<title>First Html</title>
+		<script src="jquery-3.7.1.min.js"></script>
+		<script src="main.js"></script>
+		<link type="text/css" href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="top"></div>
+		<noscript>unfortunately, your javascript is disabled</noscript>
+		<div id="header" class="bordered">
+			<p id="title">Test</p>
+			<div id="options">
+				<p>
+					<a href="pages/index.html" class="options">Pages</a>
+				</p>
+			</div>
+		</div>
+		<main class="bordered">
+			<h1>You are currently on the main page!</h1>
+			<p>click <a href = "../Pages/index.html"><strong>here</strong></a> to see the list of all pages</p>
+			<p>most pages contain something fun (scroll to the bottom)</p>
+			<p>If you wish to undo your powers, <span id="kill">open the console.</span></p>
+		</main>
+		<p><a href="#top" id="btm">back to top <span class="symbol">▲</span></a></p>
+		<p><button id="hidebody">click here to destroy the page! haha</button></p>
+	</body>
+</html>
