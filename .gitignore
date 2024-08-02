@@ -1,0 +1,12 @@
+# ignore all dotfiles
+.*
+# except:
+!.gitignore
+!.git
+# python settings:
+__pychache__
+*.pyc
+*.pyo
+# General:
+# .DS_Store is for certain security reasons...
+.DS_Store

@@ -14,7 +14,7 @@ Copyright 2024 Edward Han
    limitations under the License.
 */
 html, body{
-	font-family: serif;
+	font-family: monospace;
 	background: lightblue;
 	margin: 0px;
 }

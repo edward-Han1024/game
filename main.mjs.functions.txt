@@ -1,0 +1,35 @@
+LIST OF FUNCTIONS FOR "./main.mjs"
+document [object HTMLDocument]
+document.
+    Game: {License: 'Copyright 2024 Edward Han\n\tLicensed under the Apache License, Version 2.0 (the "License")', Map: Array(2), Visibility: Array(2), Position: Array(2), MapScheme: Array(2), …}
+    main: ce.fn.init {0: main#main, length: 1}
+    table: ce.fn.init {0: table#table.table, length: 1}
+    getTableElement: (x,y) => { … }:
+        returns the jQuery selector for the table element
+        the element is (`x`, `y`) and is 1 indexed
+    Game.
+        Map: (2) [Array(2), Array(2)]
+        Visibility: (2) [Array(2), Array(2)]
+        Values: {DD0a: {…}, DD0b: {…}, +-+-: {…}}
+        License: "Copyright 2024 Edward Han\n\tLicensed under the Apache License, Version 2.0 (the \"License\")"
+        Position: (2) [(Depends), (Depends)]
+        MapScheme: (2) [Array(2), Array(2)]
+        Nturn: (Depends)
+        VPower: (Depends)
+        TPower: (Depends)
+        Turn: (turns) => { … }:
+            adds `turns` turns to the Game
+            runs .Update()
+        LoadMap: (plane) => { … }:
+            loads the `plane` plane
+            Does not run .Update()
+        GetPlane: (x = 0, y = 0) => { … }:
+            returns the # for the plane of `x` and `y`, which are 1 indexed
+            if no `x` and `y` are provided, current ones are used.
+        VisibileLoad: (plane) => { … }:
+            Loads that specific plane
+        Update: () => { … }:
+            Updates, runs .VisibleLoad(.GetPlane()), and updates $("#turn")
+        Move: (dir) => { … }:
+            Moves in `dir` * 90 deg
+            runs .Update()
