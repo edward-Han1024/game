@@ -26,8 +26,8 @@ document.
         GetPlane: (x = 0, y = 0) => { … }:
             returns the # for the plane of `x` and `y`, which are 1 indexed
             if no `x` and `y` are provided, current ones are used.
-        VisibileLoad: (plane) => { … }:
-            Loads that specific plane
+        VisibileLoad: () => { … }:
+            Makes all the should-be-visible cells visible
         Update: () => { … }:
             Updates, runs .VisibleLoad(.GetPlane()), and updates $("#turn")
         Move: (dir) => { … }:
