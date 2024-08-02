@@ -127,8 +127,8 @@ document.Game.Move = (dir) => {
 		let plane = document.Game.ReducePlane(document.Game.GetPlane(pos[0],pos[1]));
 		let value = document.Game.Map[plane[1]][plane[0]][(pos[1]-1) % 16][(pos[0]-1) % 16]
 		if (document.Game.Values[value].Travel <= document.Game.TPower){
-			document.Game.Turn(document.Game.Values[value].Travel);
 			document.Game.Position = pos;
+			document.Game.Turn(document.Game.Values[value].Travel);
 		}
 	}
 }
