@@ -8,5 +8,4 @@ __pychache__
 *.pyc
 *.pyo
 # General:
-# .DS_Store is for certain security reasons...
 .DS_Store
